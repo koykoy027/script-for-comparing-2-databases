@@ -1,5 +1,5 @@
 # Test your source and target database
-Do you have plan to migrate your existing database from a new database? 
+If you plan to migrate your MySQL database, this script for comparison would be a big help to check if you migrated it 100%
 
 ## How to setup
 - clone this repository
