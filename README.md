@@ -40,8 +40,7 @@ If you want to count query across all tables in your database, you can achieve t
 1. Retrieving the list of all tables in the database.
 2. Selecting all table from that list.
 3. Running a query will count all rows.
-
-optional, if you want a random query for specific table, just change the value of `randomTable`, same with ID just change the value of `queryById`
+4. optional, if you want a random query for specific table, open the `tableCounts.js` file and locate `randomTable` and change the value, same goes with ID just change the value of `queryById`
 
 Open your preferred terminal and run it using Node.js
 ```
@@ -60,7 +59,7 @@ node tableSizes
 ```
 
 
-## potential error
+## Potential error
 ```js
 errorno: 'ETIMEDOUT',
 code: 'ETIMEDOUT',
