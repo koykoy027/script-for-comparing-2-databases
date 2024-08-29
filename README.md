@@ -31,7 +31,7 @@ If you want to run a random query across all tables in your database, you can ac
 4. Running a query on that randomly selected table and selected ID that will compare the source and target database.
 
 Open your preferred terminal and run it using Node.js
-```
+```js
 node tableRandomQuery
 ```
 
@@ -43,7 +43,7 @@ If you want to count query across all tables in your database, you can achieve t
 4. optional, if you want a random query for specific table, open the `tableCounts.js` file and locate `randomTable` and change the value, same goes with ID just change the value of `queryById`
 
 Open your preferred terminal and run it using Node.js
-```
+```js
 node tableCounts
 ```
 
@@ -54,7 +54,7 @@ If you want to count query across all tables in your database, you can achieve t
 3. Uses the average row size to estimate the total size of the table.
 
 Open your preferred terminal and run it using Node.js
-```
+```js
 node tableSizes
 ```
 
