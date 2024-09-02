@@ -30,7 +30,6 @@ const getTableNames = (connection, callback) => {
 const compareDataById = (sourceConn, targetConn, tables) => {
   // Select a random table
   const randomTable = tables[Math.floor(Math.random() * tables.length)];
-  // const randomTable = 'users';
 
   // Get a random ID from the source database
   const getRandomIdQuery = `SELECT id FROM \`${randomTable}\` ORDER BY RAND() LIMIT 1`;
@@ -55,7 +54,6 @@ const compareDataById = (sourceConn, targetConn, tables) => {
 
     // Query both source and target databases using the random ID
     const queryById = `SELECT * FROM \`${randomTable}\` WHERE id = ?`;
-    // const queryById = `SELECT * FROM \`${randomTable}\` WHERE id = 3242`;
 
     sourceConn.query(queryById, [randomId], (err, sourceResults) => {
       if (err) {
