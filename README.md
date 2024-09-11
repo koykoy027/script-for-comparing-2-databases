@@ -1,12 +1,20 @@
 # Test your source and target database
+
+## Introduction
 If you plan to migrate your MySQL database, this script for comparison would be a big help to check if you migrated it 100%
+
+---
+
+## Prerequisite
+- Prepare your target and source database
+- Your 2 database should be both MYSQL and have same schema
 
 ## How to setup
 - clone this repository
 - Make sure you have `node` installed in your machine
 - Go to directory and install dependencies `npm install`
 - create your `.env` file to connect your database
-```
+```env
 # Source Database Configuration
 SOURCE_HOST='YOUR SOURCE_HOST'
 SOURCE_USER='YOUR SOURCE_USER'
@@ -21,8 +29,8 @@ TARGET_PASSWORD='YOUR TARGET_PASSWORD'
 TARGET_DATABASE='YOUR TARGET_DATABASE'
 ```
 
-
 ## Available script
+
 ### Random Query 
 If you want to run a random query across all tables in your database, you can achieve this by:
 1. Retrieving the list of all tables in the database.
@@ -32,7 +40,7 @@ If you want to run a random query across all tables in your database, you can ac
 5. optional, if you want a random query for specific table, open the `tableRandomQuery.js` file and locate const `randomTable` and change the value, same goes with ID just change the value of const `randomId`
 
 Open your preferred terminal and run it using Node.js
-```js
+```bash
 node tableRandomQuery
 ```
 
@@ -43,7 +51,7 @@ If you want to count query across all tables in your database, you can achieve t
 3. Running a query will count all rows.
 
 Open your preferred terminal and run it using Node.js
-```js
+```bash
 node tableCounts
 ```
 
@@ -54,7 +62,7 @@ If you want to count query across all tables in your database, you can achieve t
 3. Uses the average row size to estimate the total size of the table.
 
 Open your preferred terminal and run it using Node.js
-```js
+```bash
 node tableSizes
 ```
 
