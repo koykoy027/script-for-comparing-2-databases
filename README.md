@@ -1,13 +1,13 @@
 # Test your source and target database
 
 ## Introduction
-If you plan to migrate your MySQL database, this script for comparison would be a big help to check if you migrated it 100%
+If you plan to migrate your MySQL database, this script for comparison would be a big help to check if you migrated it 100%.
 
 ---
 
 ## Prerequisite
 - Prepare your target and source database
-- Your 2 database should be both MYSQL and have same schema
+- Your 2 databases should be in both MYSQL and have the same schema
 
 ## How to setup
 - clone this repository
